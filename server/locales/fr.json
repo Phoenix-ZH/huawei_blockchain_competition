@@ -1,0 +1,5 @@
+{
+  "fpe": "\"fmt.Fprintf error\"",
+  "jse": "\"json.Unmarshal error\"",
+  "cnte": "\"contract call error\""
+}
