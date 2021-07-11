@@ -6,11 +6,11 @@ import (
 	"github.com/gorilla/mux"
 	"log"
 	"net/http"
-	"server/api/common"
-	"server/api/learner"
-	"server/api/organization"
-	"server/api/registration"
-	"server/schema"
+	"server.com/api/common"
+	"server.com/api/learner"
+	"server.com/api/organization"
+	"server.com/api/registration"
+	"server.com/schema"
 )
 
 type serverHandler func(http.ResponseWriter, *http.Request) *schema.ServerError
@@ -39,11 +39,9 @@ func main() {
 	r.Handle("/learner/{learner_id}/my_items", serverHandler(learner.MyItem))
 	r.Handle("/learner/{learner_id}/my_items/{item_id}", serverHandler(learner.ItemQuery))
 	r.Handle("/learner/{learner_id}/certs", serverHandler(learner.Certs))
-	//r.Handle("/learner/{learner_id}/items-update/{item_id}", serverHandler())
 	r.Handle("/org/{org_id}/items", serverHandler(organization.IssuerItems))
-	r.Handle("/org/{org_id}/items/{item_id}", serverHandler(learner.ItemQuery))
+	r.Handle("/org/{org_id}/items/{item_id}", serverHandler(organization.ItemQuery))
 	r.Handle("/org/{org_id}/items/add", serverHandler(organization.AddItem))
-	//r.Handle("/org/{org_id}/items/update", serverHandler())
 	err := http.ListenAndServe(":9090", r)
 	if err != nil {
 		log.Fatal("ListenAndServer: ", err)
