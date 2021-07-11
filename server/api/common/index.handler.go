@@ -3,7 +3,7 @@ package common
 import (
 	"fmt"
 	"net/http"
-	"schema"
+	"server.com/schema"
 	"strings"
 )
 

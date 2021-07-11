@@ -1,13 +1,13 @@
 package registration
 
 import (
-	"contract"
+	"server.com/api/contract"
 	"encoding/json"
 	"errors"
 	"fmt"
 	"github.com/Andrew-M-C/go.jsonvalue"
 	"net/http"
-	"schema"
+	"server.com/schema"
 	"strings"
 )
 

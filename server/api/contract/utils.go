@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"git.huawei.com/poissonsearch/wienerchain/proto/common"
-	"schema"
+	"server.com/schema"
 )
 
 func parseResponse(response *common.Response, node string, info string) ([]byte, error) {

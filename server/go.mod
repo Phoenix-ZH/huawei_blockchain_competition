@@ -1,4 +1,4 @@
-module server
+module server.com
 
 go 1.13
 

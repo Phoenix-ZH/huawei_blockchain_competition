@@ -3,7 +3,7 @@ package registration
 import (
 	"fmt"
 	"net/http"
-	"schema"
+	"server.com/schema"
 )
 
 /*

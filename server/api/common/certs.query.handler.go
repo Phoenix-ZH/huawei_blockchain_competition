@@ -1,13 +1,13 @@
 package common
 
 import (
-	"contract"
+	"server.com/api/contract"
 	"encoding/json"
 	"fmt"
 	"github.com/Andrew-M-C/go.jsonvalue"
 	"github.com/bykovme/gotrans"
 	"net/http"
-	"schema"
+	"server.com/schema"
 )
 
 /*

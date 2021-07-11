@@ -1,12 +1,12 @@
 package organization
 
 import (
-	"contract"
+	"server.com/api/contract"
 	"encoding/json"
 	"fmt"
 	"github.com/Andrew-M-C/go.jsonvalue"
 	"net/http"
-	"schema"
+	"server.com/schema"
 )
 
 /*
